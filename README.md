@@ -1,4 +1,4 @@
-#Snake
+# Snake
 simple snake in python
 
 
