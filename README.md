@@ -1,4 +1,9 @@
 # Snake
+
 simple snake in python
 
-To be continued
+
+
+## Controls
+
+User arrow keys to move around
