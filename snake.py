@@ -27,12 +27,18 @@ class Snake:
         new_snake_seg.goto(position)
         self.snake.append(new_snake_seg)
 
+    def reset(self):
+        for seg in self.snake:
+            seg.goto(1000,1000)
+        self.snake.clear()
+        self.create_snake()
+        self.head = self.snake[0]
+
     def extend(self):
         """add new segment to snake"""
         self.add_segment(self.snake[-1].position())
 
     def move_snake(self):
-
         for seg_nb in range(len(self.snake) - 1, 0, -1):
             # each snake's segment will take place of segment n-1 within snake
             # range function don't take in account seg 0 (stop before 0) : head
